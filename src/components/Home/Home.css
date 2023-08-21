@@ -1,5 +1,43 @@
 .home {
     width: 100vw;
     height: 100vh;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(31, 131, 39, 0.795);
+}
+
+.home-nav {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(14, 26, 163);
+}
+
+.home-hamburger-menu{
+    width: auto;
+    height: auto;
+    margin: 10px 20px;
+    background-color: thistle;
+}
+.home-body {
+    width: 100vw;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.home-body-info {
+    width: 60%;
+    height: auto;
+    background-color: rgb(161, 127, 255);
+}
+
+/* home body text info css */
+
+.name-info {
+    
 }
