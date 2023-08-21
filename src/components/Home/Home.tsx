@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction } from "react";
 import "./Home.css";
 import { motion } from "framer-motion";
 import MenuButton from "./MenuButton/MenuButton";
