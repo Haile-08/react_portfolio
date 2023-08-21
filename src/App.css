@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'lato-light';
+  src: local('Lato-Light'), url("./fonts/Lato/Lato-Light.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'lato-thin';
+  src: local('Lato-Thin'), url("./fonts/Lato/Lato-Thin.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'lato-bold';
+  src: local('Lato-Bold'), url("./fonts/Lato/Lato-Bold.ttf") format('truetype');
+}
+
 .app {
   width: 100vw;
   min-height: 100vh;

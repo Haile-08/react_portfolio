@@ -1,10 +1,6 @@
 import React from "react";
 import "./Home.css";
 
-//fonts
-import "../../fonts/Lato/Lato-Light.ttf"
-import "../../fonts/Lato/Lato-Thin.ttf"
-
 function Home() {
   return (
     <div className="home">
