@@ -1,0 +1,58 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.home-nav {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.home-hamburger-menu{
+    width: auto;
+    height: auto;
+    margin: 10px 20px;
+    
+}
+.home-body {
+    width: 100vw;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.home-body-info {
+    width: 80%;
+    height: auto;
+   
+}
+
+/* home body text info css */
+
+.name-info {
+    margin: 0px;
+    font-size: 3em;
+    font-family: lato-bold;
+   
+}
+
+.career-info {
+    margin: 0px 0px 15px 0px;
+    font-size: 1.3em;
+    font-family: lato-light;
+}
+
+.decor-info {
+    margin: 0px;
+    font-size: 1em;
+    font-family: lato-thin;
+}
