@@ -1,23 +1,31 @@
-import React from "react";
+import { Dispatch, SetStateAction } from "react";
 import "./Home.css";
 import { motion } from "framer-motion";
+import MenuButton from "./MenuButton/MenuButton";
+
+type menuProps = {
+  open?: boolean;
+  setOpen?: Dispatch<SetStateAction<boolean>>;
+};
 
 const textvariants = {
   visible: { opacity: 1, transition: { delay: 0.9, duration: 1.5 } },
   hidden: { opacity: 0, transition: { delay: 0.9, duration: 1.5 } },
 };
 
-function Home() {
+function Home({ open, setOpen }: menuProps) {
   return (
     <div className="home">
       <div className="home-nav">
-        <div className="home-hamburger-menu">x</div>
+        <div className="home-hamburger-menu">
+          <MenuButton open={open} />
+        </div>
       </div>
       <div className="home-body">
         <motion.div
           className="home-body-info"
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
           variants={textvariants}
         >
           <p className="name-info">Haile Melaku</p>
