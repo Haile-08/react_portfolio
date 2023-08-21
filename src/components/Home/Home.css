@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'lato-light';
+    src: local('Lato-Light'), url("../../fonts/Lato/Lato-Light.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'lato-thin';
+    src: local('Lato-Thin'), url("../../fonts/Lato/Lato-Thin.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'lato-bold';
+    src: local('Lato-Bold'), url("../../fonts/Lato/Lato-Bold.ttf") format('truetype');
+}
 .home {
     width: 100vw;
     height: 100vh;
@@ -31,7 +43,7 @@
 }
 
 .home-body-info {
-    width: 60%;
+    width: 80%;
     height: auto;
     background-color: rgb(161, 127, 255);
 }
@@ -39,5 +51,20 @@
 /* home body text info css */
 
 .name-info {
-    
+    margin: 0px;
+    font-size: 3em;
+    font-family: lato-bold;
+    background-color: blue;
+}
+
+.career-info {
+    margin: 0px 0px 15px 0px;
+    font-size: 1.3em;
+    font-family: lato-light;
+}
+
+.decor-info {
+    margin: 0px;
+    font-size: 1em;
+    font-family: lato-thin;
 }
