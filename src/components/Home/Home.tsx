@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import "./Home.css";
 import { motion } from "framer-motion";
 import MenuButton from "./MenuButton/MenuButton";
@@ -14,10 +14,16 @@ const textvariants = {
 };
 
 function Home({ open, setOpen }: menuProps) {
+  const handleClick = () => {
+    if (setOpen) {
+      setOpen((prevState) => !prevState);
+    }
+  };
+  console.log(open);
   return (
     <div className="home">
       <div className="home-nav">
-        <div className="home-hamburger-menu">
+        <div className="home-hamburger-menu" onClick={handleClick}>
           <MenuButton open={open} />
         </div>
       </div>
