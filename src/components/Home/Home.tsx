@@ -19,7 +19,6 @@ function Home({ open, setOpen }: menuProps) {
       setOpen((prevState) => !prevState);
     }
   };
-  console.log(open);
   return (
     <div className="home">
       <div className="home-nav">

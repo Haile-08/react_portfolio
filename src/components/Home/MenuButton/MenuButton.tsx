@@ -5,6 +5,11 @@ type props = {
   open?: boolean;
 };
 
+const buttonvariants = {
+  visible: { opacity: 1, transition: { delay: 0.9, duration: 1.5 } },
+  hidden: { opacity: 0, transition: { delay: 0.9, duration: 1.5 } },
+};
+
 function MenuButton({ open }: props) {
   const variant = open ? "opened" : "closed";
   const top = {
@@ -14,7 +19,7 @@ function MenuButton({ open }: props) {
     },
     opened: {
       rotate: 45,
-      translateY: 8.5,
+      translateY: 10,
     },
   };
   const center = {
@@ -32,11 +37,16 @@ function MenuButton({ open }: props) {
     },
     opened: {
       rotate: -45,
-      translateY: -8.5,
+      translateY: -10,
     },
   };
   return (
-    <div className="menu-container">
+    <motion.div
+      className="menu-container"
+      initial="hidden"
+      animate="visible"
+      variants={buttonvariants}
+    >
       <motion.div
         transition={{ type: "spring", stiffness: 260, damping: 20 }}
         variants={top}
@@ -49,7 +59,7 @@ function MenuButton({ open }: props) {
         variants={center}
         initial="closed"
         animate={variant}
-        className="line"
+        className="diff"
       />
       <motion.div
         transition={{ type: "spring", stiffness: 260, damping: 20 }}
@@ -58,7 +68,7 @@ function MenuButton({ open }: props) {
         animate={variant}
         className="diff"
       />
-    </div>
+    </motion.div>
   );
 }
 
