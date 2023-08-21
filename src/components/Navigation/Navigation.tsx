@@ -1,3 +1,4 @@
+import { Dispatch, SetStateAction } from "react";
 import "./Navigation.css";
 
 type navProps = {
@@ -5,7 +6,7 @@ type navProps = {
   setOpen?: Dispatch<SetStateAction<boolean>>;
 };
 
-function Navigation() {
+function Navigation({ open, setOpen }: navProps) {
   return <div className="navigation">Navigation</div>;
 }
 
