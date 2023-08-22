@@ -27,14 +27,21 @@ function Home() {
           </motion.div>
         </AnimatePresence>
       </div>
-      <div className="home-scroll">
+      <motion.div
+        className="home-scroll"
+        key="home-body-info"
+        initial="hidden"
+        animate="visible"
+        exit="leave"
+        variants={textvariants}
+      >
         <div className="home-scroll-text">
           <p>SCROLL</p>
         </div>
         <div className="home-scroll-line">
-          <div className="line"></div>
+          <hr className="line" />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import Navigation from "./components/Navigation/Navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import NavBar from "./components/NavBar/NavBar";
+import Project from "./components/Project/Project";
 
 function App() {
   const [open, setOpen] = useState<boolean>(false);
@@ -27,6 +28,7 @@ function App() {
       {open ? null : (
         <div className="app">
           <Home />
+          <Project />
         </div>
       )}
     </>
