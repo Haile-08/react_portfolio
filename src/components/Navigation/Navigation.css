@@ -8,9 +8,71 @@
 }
 .navigation-body {
     width: 100vw;
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     
+}
+
+.navigation-social {
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.icon {
+    width: 34px;
+    height: 34px;
+    margin: 10px 40px;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    
+}
+
+.x {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 34px;
+    border-radius: 7px; 
+}
+
+.x img{
+    width: 34px;
+}
+
+.github img{
+    width: 34px;
+}
+
+.linkedin img {
+    width: 34px;
+}
+.navigation-menu {
+    height: 100vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    
+}
+
+.navigation-menu-container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.navigation-menu-container a {
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 60px;
+    font-family: lato-light;
 }

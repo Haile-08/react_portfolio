@@ -18,7 +18,7 @@ function App() {
             initial={{ y: "-100vh" }}
             animate={{ y: 0 }}
             exit={{ y: "-100vh" }}
-            transition={{ delay: 0.5, duration: 0.7, type: "tween" }}
+            transition={{ delay: 0.2, duration: 0.5, type: "tween" }}
           >
             <Navigation />
           </motion.div>

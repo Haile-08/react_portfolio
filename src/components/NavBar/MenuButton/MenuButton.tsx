@@ -38,21 +38,30 @@ function MenuButton({ open }: props) {
   return (
     <motion.div className="menu-container">
       <motion.div
-        transition={{ type: "spring", stiffness: 260, damping: 20 }}
+        transition={{
+          delay: 0.2,
+          duration: 0.4,
+        }}
         variants={top}
         initial="closed"
         animate={variant}
         className="diff"
       />
       <motion.div
-        transition={{ type: "spring", stiffness: 260, damping: 20 }}
+        transition={{
+          delay: 0.2,
+          duration: 0.4,
+        }}
         variants={center}
         initial="closed"
         animate={variant}
         className="diff"
       />
       <motion.div
-        transition={{ type: "spring", stiffness: 260, damping: 20 }}
+        transition={{
+          delay: 0.2,
+          duration: 0.4,
+        }}
         variants={bottom}
         initial="closed"
         animate={variant}

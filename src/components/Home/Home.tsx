@@ -1,26 +1,31 @@
 import "./Home.css";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const textvariants = {
-  visible: { opacity: 1, transition: { delay: 0.9, duration: 1.5 } },
-  hidden: { opacity: 0, transition: { delay: 0.9, duration: 1.5 } },
+  visible: { opacity: 1, transition: { delay: 0.3, duration: 1.5 } },
+  hidden: { opacity: 0, transition: { delay: 0.3, duration: 1.5 } },
+  leave: { opacity: 0, transition: { delay: 0.3, duration: 1.5 } },
 };
 
 function Home() {
   return (
     <div className="home">
       <div className="home-body">
-        <motion.div
-          className="home-body-info"
-          initial="hidden"
-          whileInView="visible"
-          variants={textvariants}
-        >
-          <p className="name-info">Haile Melaku</p>
-          <p className="career-info">Software engineer, Designer</p>
-          <p className="decor-info">Hello</p>
-          <p className="decor-info">world</p>
-        </motion.div>
+        <AnimatePresence>
+          <motion.div
+            key="home-body-info"
+            className="home-body-info"
+            initial="hidden"
+            animate="visible"
+            exit="leave"
+            variants={textvariants}
+          >
+            <p className="name-info">Haile Melaku</p>
+            <p className="career-info">Software engineer, Designer</p>
+            <p className="decor-info">Hello</p>
+            <p className="decor-info">world</p>
+          </motion.div>
+        </AnimatePresence>
       </div>
     </div>
   );
