@@ -10,8 +10,9 @@ function App() {
   return (
     <>
       <NavBar open={open} setOpen={setOpen} />
-      {open ? (
-        <AnimatePresence>
+
+      <AnimatePresence>
+        {open && (
           <motion.div
             className="nav"
             initial={{ y: "-100vh" }}
@@ -21,8 +22,9 @@ function App() {
           >
             <Navigation />
           </motion.div>
-        </AnimatePresence>
-      ) : (
+        )}
+      </AnimatePresence>
+      {open ? null : (
         <div className="app">
           <Home />
         </div>
