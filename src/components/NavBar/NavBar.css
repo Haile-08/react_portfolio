@@ -1,0 +1,24 @@
+.navBar{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.navBar-nav {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: sticky;
+}
+
+.navBar-hamburger-menu {
+    width: auto;
+    height: auto;
+    margin: 10px 20px;
+}

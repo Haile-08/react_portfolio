@@ -5,19 +5,6 @@
     flex-direction: column;
 }
 
-.home-nav {
-    width: 100vw;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.home-hamburger-menu{
-    width: auto;
-    height: auto;
-    margin: 10px 20px;
-}
 .home-body {
     width: 100vw;
     flex: 1;

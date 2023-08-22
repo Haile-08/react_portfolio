@@ -1,31 +1,14 @@
-import { Dispatch, SetStateAction } from "react";
 import "./Home.css";
 import { motion } from "framer-motion";
-import MenuButton from "./MenuButton/MenuButton";
-
-type menuProps = {
-  open?: boolean;
-  setOpen?: Dispatch<SetStateAction<boolean>>;
-};
 
 const textvariants = {
   visible: { opacity: 1, transition: { delay: 0.9, duration: 1.5 } },
   hidden: { opacity: 0, transition: { delay: 0.9, duration: 1.5 } },
 };
 
-function Home({ open, setOpen }: menuProps) {
-  const handleClick = () => {
-    if (setOpen) {
-      setOpen((prevState) => !prevState);
-    }
-  };
+function Home() {
   return (
     <div className="home">
-      <div className="home-nav">
-        <div className="home-hamburger-menu" onClick={handleClick}>
-          <MenuButton open={open} />
-        </div>
-      </div>
       <div className="home-body">
         <motion.div
           className="home-body-info"
