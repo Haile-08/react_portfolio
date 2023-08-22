@@ -39,3 +39,36 @@
     font-size: 1em;
     font-family: lato-thin;
 }
+
+.home-scroll {
+    padding: 0;
+    background-color: aqua;
+}
+
+.home-scroll-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: antiquewhite;
+    font-family: lato-thin;
+    font-size: 24px;
+}
+
+.home-scroll-text p{
+    padding: 0px;
+    margin: 3px 0px;
+}
+
+.home-scroll-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.line {
+    width: 10px;
+    height: 50px;
+    background-color: #ffffff;
+}

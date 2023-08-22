@@ -27,6 +27,14 @@ function Home() {
           </motion.div>
         </AnimatePresence>
       </div>
+      <div className="home-scroll">
+        <div className="home-scroll-text">
+          <p>SCROLL</p>
+        </div>
+        <div className="home-scroll-line">
+          <div className="line"></div>
+        </div>
+      </div>
     </div>
   );
 }
