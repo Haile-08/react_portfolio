@@ -9,19 +9,37 @@ function Navigation() {
       <div className="navigation-body">
         <div className="navigation-social">
           <div className="icon">
-            <div className="x">
-              <img src={x} alt="x" />
-            </div>
+            <a
+              href="https://twitter.com/Haile09774574"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="x">
+                <img src={x} alt="x" />
+              </div>
+            </a>
           </div>
           <div className="icon">
-            <div className="github">
-              <img src={github} alt="github" />
-            </div>
+            <a
+              href="https://github.com/Haile-08"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="github">
+                <img src={github} alt="github" />
+              </div>
+            </a>
           </div>
           <div className="icon">
-            <div className="linkedin">
-              <img src={linkedin} alt="linkedin" />
-            </div>
+            <a
+              href="https://www.linkedin.com/in/haile-melaku/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="linkedin">
+                <img src={linkedin} alt="linkedin" />
+              </div>
+            </a>
           </div>
         </div>
         <div className="navigation-menu">
