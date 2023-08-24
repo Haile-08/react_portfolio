@@ -9,7 +9,7 @@ const textvariants = {
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="home-body">
         <AnimatePresence>
           <motion.div

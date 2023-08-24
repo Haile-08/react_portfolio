@@ -2,8 +2,18 @@ import "./Navigation.css";
 import x from "../../assets/x.png";
 import github from "../../assets/github.png";
 import linkedin from "../../assets/linkedin.png";
+import { HashLink as Link } from "react-router-hash-link";
+import { Dispatch, SetStateAction } from "react";
 
-function Navigation() {
+type navProps = {
+  setOpen?: Dispatch<SetStateAction<boolean>>;
+};
+function Navigation({ setOpen }: navProps) {
+  const handleClick = () => {
+    if (setOpen) {
+      setOpen((prevState) => !prevState);
+    }
+  };
   return (
     <div className="navigation">
       <div className="navigation-body">
@@ -44,10 +54,26 @@ function Navigation() {
         </div>
         <div className="navigation-menu">
           <div className="navigation-menu-container">
-            <a href="http://">Home</a>
-            <a href="http://">Project</a>
-            <a href="http://">Contact</a>
-            <a href="http://">About</a>
+            <div onClick={handleClick}>
+              <Link to="#top" smooth>
+                Home
+              </Link>
+            </div>
+            <div onClick={handleClick}>
+              <Link to="#project" smooth>
+                Project
+              </Link>
+            </div>
+            <div>
+              <Link to="" smooth>
+                Contact
+              </Link>
+            </div>
+            <div>
+              <Link to="" smooth>
+                About
+              </Link>
+            </div>
           </div>
         </div>
       </div>
