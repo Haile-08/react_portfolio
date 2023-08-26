@@ -26,7 +26,7 @@ function Demo1() {
       whileInView="visible"
       variants={demo1variantsfull}
     >
-      haile
+      haile melaku
     </motion.div>
   );
 }
