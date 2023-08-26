@@ -67,21 +67,12 @@
     justify-content: center;
 }
 
-.project-demo-1 {
+.demo-small {
     width: 60vw;
     height: 30vh;
     background-color: #4b4b4b;
     margin: 10px;
     border-radius: 5px;
-    cursor: pointer;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-}
-.project-demo-2 {
-    width: 60vw;
-    height: 30vh;
-    margin: 10px;
-    border-radius: 5px;
-    background-color: #4b4b4b;
     cursor: pointer;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
