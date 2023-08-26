@@ -9,7 +9,7 @@ const textvariants = {
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="home-body">
         <AnimatePresence>
           <motion.div
@@ -27,6 +27,21 @@ function Home() {
           </motion.div>
         </AnimatePresence>
       </div>
+      <motion.div
+        className="home-scroll"
+        key="home-body-info"
+        initial="hidden"
+        animate="visible"
+        exit="leave"
+        variants={textvariants}
+      >
+        <div className="home-scroll-text">
+          <p>SCROLL</p>
+        </div>
+        <div className="home-scroll-line">
+          <hr className="line" />
+        </div>
+      </motion.div>
     </div>
   );
 }

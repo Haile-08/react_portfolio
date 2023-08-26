@@ -39,3 +39,36 @@
     font-size: 1em;
     font-family: lato-thin;
 }
+
+.home-scroll {
+    padding: 0;
+}
+
+.home-scroll-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: lato-light;
+    font-size: 15px;
+}
+
+.home-scroll-text p{
+    padding: 0px;
+    margin: 3px 0px;
+}
+
+.home-scroll-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    width: 0.9px;
+    height: 14px;
+    background-color: #ffffff;
+}

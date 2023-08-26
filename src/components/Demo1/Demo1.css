@@ -1,0 +1,11 @@
+.demo1-page {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 20vh;
+    left: 20vw;    
+    background-color: #32ff7e;
+    z-index: 20;
+}
