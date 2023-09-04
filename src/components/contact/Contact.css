@@ -1,0 +1,107 @@
+.contact {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row; 
+}
+
+.contact-title {
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: lato-thin;
+    color: #ffffff;
+    font-size: 34px;
+}
+
+.contact-title p {
+    margin: 0;
+    padding: 0 ;
+    margin-top: 30vh;
+    transform: rotate(-90deg) translate(-50%);
+   
+}
+.contact-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    
+}
+
+.contact-body p {
+    font-size: 25px;
+    font-family: lato-light;
+}
+.contact-body form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+    width: 60vw;
+    height: 50vh; 
+    font-family: lato-light;
+}
+
+.contact-top{
+    display: flex;
+}
+.contact-email {
+    outline: none;
+    border: none;
+    width: 25vw;
+    height: 5vh;
+    margin: 1vh;
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: lato-light;
+    border-radius: 5px;
+    background-color: #4b4b4b4f;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.contact-subject {
+    outline: none;
+    border: none;
+    width: 25vw;
+    height: 5vh;
+    margin: 1vh;
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: lato-light;
+    border-radius: 5px;
+    background-color: #4b4b4b4f;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.contact-input-body {
+    outline: none;
+    border: none;
+    width: 53vw;
+    height: 20vh;
+    margin: 1vh;
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    font-size: 20px;
+    font-family: lato-light;
+    border-radius: 5px;
+    background-color: #4b4b4b4f;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.contact-body button{
+    outline: none;
+    border: none;
+    width: 55vw;
+    height: 6vh;
+    margin: 1vh;
+    cursor: pointer;
+    font-family: lato-light;
+    font-size: 20px;
+    border-radius: 5px; 
+    background-color: #4b4b4b4f;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
