@@ -2,7 +2,7 @@ import "./Navigation.css";
 import x from "../../assets/x.png";
 import github from "../../assets/github.png";
 import linkedin from "../../assets/linkedin.png";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import { Dispatch, SetStateAction } from "react";
 
 type navProps = {
@@ -55,24 +55,24 @@ function Navigation({ setOpen }: navProps) {
         <div className="navigation-menu">
           <div className="navigation-menu-container">
             <div onClick={handleClick}>
-              <Link to="#top" smooth>
+              <HashLink to="#" smooth>
                 Home
-              </Link>
+              </HashLink>
             </div>
             <div onClick={handleClick}>
-              <Link to="#project" smooth>
+              <HashLink to="#home" smooth>
                 Project
-              </Link>
+              </HashLink>
             </div>
-            <div>
-              <Link to="" smooth>
+            <div onClick={handleClick}>
+              <HashLink to="#project" smooth>
                 Contact
-              </Link>
+              </HashLink>
             </div>
-            <div>
-              <Link to="" smooth>
+            <div onClick={handleClick}>
+              <HashLink to="" smooth>
                 About
-              </Link>
+              </HashLink>
             </div>
           </div>
         </div>

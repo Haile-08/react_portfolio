@@ -4,29 +4,35 @@ import { valibotResolver } from "@hookform/resolvers/valibot";
 import { object, string, minLength, email } from "valibot";
 import error from "../../assets/error.png";
 import "./Contact.css";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 interface IFormInputs {
-  email: string;
-  subject: string;
-  body: string;
+  from_email: string;
+  from_name: string;
+  message_html: string;
 }
 
 const schema = object({
-  email: string("Your email must be a string.", [
+  from_email: string("Your email must be a string.", [
     minLength(1, "Please enter your email."),
     email("The email address is badly formatted."),
   ]),
-  subject: string("email subject is required", [
+  from_name: string("email subject is required", [
     minLength(3, "Needs to be at least 3 characters"),
   ]),
-  body: string("email body is required", [
+  message_html: string("email body is required", [
     minLength(3, "Needs to be at least 3 characters"),
   ]),
 });
 
-const onSubmit: SubmitHandler<IFormInputs> = (data) => console.log(data);
-
 function Contact() {
+  const [formData, setFormData] = useState<IFormInputs>({
+    from_email: "",
+    from_name: "",
+    message_html: "",
+  });
+
   const {
     register,
     handleSubmit,
@@ -35,8 +41,30 @@ function Contact() {
     resolver: valibotResolver(schema),
   });
 
+  const handleChange = (event: any) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
+
+  const onSubmit: SubmitHandler<IFormInputs> = (data) => {
+    emailjs
+      .send(
+        "service_53inu7j",
+        "template_hc7bmfc",
+        formData,
+        "mnCv-JDF0vzNhJ77q"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact-title">
         <p>Contact me</p>
       </div>
@@ -47,30 +75,32 @@ function Contact() {
             <div className="input-box">
               <input
                 className={
-                  "contact-email-" + (errors?.email ? "show" : "hidden")
+                  "contact-email-" + (errors?.from_email ? "show" : "hidden")
                 }
                 placeholder="Email"
-                {...register("email")}
+                {...register("from_email")}
+                onChange={handleChange}
               />
-              {errors?.email && (
+              {errors?.from_email && typeof errors.from_email !== "string" && (
                 <p className="error">
                   <img src={error} alt="error" />
-                  {errors.email.message}
+                  {errors.from_email?.message}
                 </p>
               )}
             </div>
             <div className="input-box">
               <input
                 className={
-                  "contact-subject-" + (errors?.subject ? "show" : "hidden")
+                  "contact-subject-" + (errors?.from_name ? "show" : "hidden")
                 }
                 placeholder="Subject"
-                {...register("subject")}
+                {...register("from_name")}
+                onChange={handleChange}
               />
-              {errors.subject && (
+              {errors?.from_name && typeof errors.from_name !== "string" && (
                 <p className="error">
                   <img src={error} alt="error" />
-                  {errors.subject.message}
+                  {errors.from_name?.message}
                 </p>
               )}
             </div>
@@ -78,20 +108,21 @@ function Contact() {
           <div className="input-box">
             <textarea
               className={
-                "contact-input-body-" + (errors?.body ? "show" : "hidden")
+                "contact-input-body-" +
+                (errors?.message_html ? "show" : "hidden")
               }
               placeholder="Body"
-              {...register("body")}
+              {...register("message_html")}
+              onChange={handleChange}
             />
-            {errors.body && (
-              <p className="error-text">
-                {" "}
-                <img src={error} alt="error" />
-                {errors.body.message}
-              </p>
-            )}
+            {errors?.message_html &&
+              typeof errors.message_html !== "string" && (
+                <p className="error-text">
+                  <img src={error} alt="error" />
+                  {errors.message_html?.message}
+                </p>
+              )}
           </div>
-
           <motion.button
             type="submit"
             whileHover={{ scale: 1.05 }}
