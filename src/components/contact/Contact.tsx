@@ -27,11 +27,7 @@ const schema = object({
 });
 
 function Contact() {
-  const [formData, setFormData] = useState<IFormInputs>({
-    from_email: "",
-    from_name: "",
-    message_html: "",
-  });
+  
 
   const {
     register,
@@ -41,17 +37,17 @@ function Contact() {
     resolver: valibotResolver(schema),
   });
 
-  const handleChange = (event: any) => {
-    const { name, value } = event.target;
-    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
-  };
-
   const onSubmit: SubmitHandler<IFormInputs> = (data) => {
+    const { from_email, from_name, message_html } = data;
     emailjs
       .send(
         "service_53inu7j",
         "template_hc7bmfc",
-        formData,
+        {
+          from_email,
+          from_name,
+          message_html,
+        },
         "mnCv-JDF0vzNhJ77q"
       )
       .then(
@@ -79,7 +75,6 @@ function Contact() {
                 }
                 placeholder="Email"
                 {...register("from_email")}
-                onChange={handleChange}
               />
               {errors?.from_email && typeof errors.from_email !== "string" && (
                 <p className="error">
@@ -95,7 +90,6 @@ function Contact() {
                 }
                 placeholder="Subject"
                 {...register("from_name")}
-                onChange={handleChange}
               />
               {errors?.from_name && typeof errors.from_name !== "string" && (
                 <p className="error">
@@ -113,7 +107,6 @@ function Contact() {
               }
               placeholder="Body"
               {...register("message_html")}
-              onChange={handleChange}
             />
             {errors?.message_html &&
               typeof errors.message_html !== "string" && (

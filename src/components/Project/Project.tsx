@@ -5,8 +5,8 @@ import Demo1 from "../Demo1/Demo1";
 import Demo2 from "../Demo2/Demo2";
 
 const demo1variants = {
-  visible: { opacity: 1, transition: { delay: 0.3, duration: 0.8 } },
-  hidden: { opacity: 0, transition: { delay: 0.3, duration: 0.8 } },
+  visible: { opacity: 1, transition: { delay: 0.1, duration: 0.8 } },
+  hidden: { opacity: 0, transition: { delay: 0.1, duration: 0.8 } },
   hover: {
     scale: 1.03,
     textShadow: "0px 0px 4px gray",
@@ -15,8 +15,8 @@ const demo1variants = {
 };
 
 const demo2variants = {
-  visible: { opacity: 1, transition: { delay: 0.9, duration: 0.5 } },
-  hidden: { opacity: 0, transition: { delay: 0.9, duration: 0.5 } },
+  visible: { opacity: 1, transition: { delay: 0.5, duration: 0.5 } },
+  hidden: { opacity: 0, transition: { delay: 0.5, duration: 0.5 } },
   hover: {
     scale: 1.03,
     textShadow: "0px 0px 4px gray",
