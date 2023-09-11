@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import NavBar from "./components/NavBar/NavBar";
 import Project from "./components/Project/Project";
 import Contact from "./components/contact/Contact";
-
+import About from "./components/About/About";
 
 function App() {
   const [open, setOpen] = useState<boolean>(false);
@@ -31,6 +31,7 @@ function App() {
         <div className="app">
           <Home />
           <Project />
+          <About />
           <Contact />
         </div>
       )}
