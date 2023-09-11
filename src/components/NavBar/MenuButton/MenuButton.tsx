@@ -55,7 +55,7 @@ function MenuButton({ open }: props) {
         variants={center}
         initial="closed"
         animate={variant}
-        className="diff"
+        className="mid"
       />
       <motion.div
         transition={{

@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation/Navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import NavBar from "./components/NavBar/NavBar";
 import Project from "./components/Project/Project";
+import Contact from "./components/contact/Contact";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <div className="app">
           <Home />
           <Project />
+          <Contact />
         </div>
       )}
     </>

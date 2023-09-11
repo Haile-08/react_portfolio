@@ -14,3 +14,11 @@
     border-bottom: 1px solid white;
     border-radius: 10px;
 }
+.mid {
+    margin: 9px 9px 9px 16px;
+    background-color: white;
+    width: 33px;
+    height: 0.1px;
+    border-bottom: 1px solid white;
+    border-radius: 10px;  
+}
