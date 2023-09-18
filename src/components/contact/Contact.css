@@ -59,7 +59,7 @@
     font-family: lato-light;
     border-radius: 5px;
     background-color: #4b4b4b94;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .contact-email-show {
@@ -73,7 +73,7 @@
     font-family: lato-light;
     border-radius: 5px;
     background-color: #4b4b4b94;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 .contact-subject-show {
     outline: none;
@@ -86,7 +86,7 @@
     font-family: lato-light;
     border-radius: 5px;
     background-color: #4b4b4b94;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .contact-subject-hidden {
@@ -100,7 +100,7 @@
     font-family: lato-light;
     border-radius: 5px;
     background-color: #4b4b4b94;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .contact-input-body-show {
@@ -116,7 +116,7 @@
     font-family: lato-light;
     border-radius: 5px;
     background-color: #4b4b4b94;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 .contact-input-body-hidden {
     outline: none;
@@ -131,7 +131,7 @@
     font-family: lato-light;
     border-radius: 5px;
     background-color: #4b4b4b94;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .contact-body button{
@@ -145,7 +145,7 @@
     font-size: 20px;
     border-radius: 5px; 
     background-color: #4b4b4b94;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .error {

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./About.css";
 
 function About() {
@@ -40,7 +41,13 @@ function About() {
               <hr />
             </div>
             <a href="/1. Haile_Melaku_Resume.pdf" download>
-              <button>RESUME</button>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                RESUME
+              </motion.button>
             </a>
           </div>
         </div>
