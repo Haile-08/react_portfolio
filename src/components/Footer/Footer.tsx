@@ -1,6 +1,7 @@
 import x from "../../assets/x.png";
 import github from "../../assets/github.png";
 import linkedin from "../../assets/linkedin.png";
+import logo from "../../assets/logo.png";
 import "./Footer.css";
 
 function Footer() {
@@ -8,7 +9,8 @@ function Footer() {
     <div className="footer">
       <div className="footer-body">
         <div className="footer-logo">
-          <p>HAILE</p>
+          <img src={logo} alt="logo" />
+          <h1>HAILE</h1>
         </div>
         <hr className="footer-line" />
         <div className="footer-info">
