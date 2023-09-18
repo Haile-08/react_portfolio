@@ -8,9 +8,9 @@ const demo1variants = {
   visible: { opacity: 1, transition: { delay: 0.1, duration: 0.8 } },
   hidden: { opacity: 0, transition: { delay: 0.1, duration: 0.8 } },
   hover: {
-    scale: 1.03,
+    scale: 1.05,
     textShadow: "0px 0px 4px gray",
-    transition: { delay: 0.1, duration: 0.4 },
+    transition: { type: "spring", stiffness: 400, damping: 17 },
   },
 };
 
@@ -18,9 +18,13 @@ const demo2variants = {
   visible: { opacity: 1, transition: { delay: 0.5, duration: 0.5 } },
   hidden: { opacity: 0, transition: { delay: 0.5, duration: 0.5 } },
   hover: {
-    scale: 1.03,
+    scale: 1.05,
     textShadow: "0px 0px 4px gray",
-    transition: { delay: 0.1, duration: 0.4 },
+    transition: {
+      type: "spring",
+      stiffness: 400,
+      damping: 17,
+    },
   },
 };
 
