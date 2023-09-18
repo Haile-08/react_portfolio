@@ -4,6 +4,7 @@ import github from "../../assets/github.png";
 import linkedin from "../../assets/linkedin.png";
 import { HashLink } from "react-router-hash-link";
 import { Dispatch, SetStateAction } from "react";
+import { motion } from "framer-motion";
 
 type navProps = {
   setOpen?: Dispatch<SetStateAction<boolean>>;
@@ -54,26 +55,26 @@ function Navigation({ setOpen }: navProps) {
         </div>
         <div className="navigation-menu">
           <div className="navigation-menu-container">
-            <div onClick={handleClick}>
+            <motion.div whileHover={{ scale: 1.2 }} onClick={handleClick}>
               <HashLink to="#" smooth>
                 Home
               </HashLink>
-            </div>
-            <div onClick={handleClick}>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.2 }} onClick={handleClick}>
               <HashLink to="#home" smooth>
                 Project
               </HashLink>
-            </div>
-            <div onClick={handleClick}>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.2 }} onClick={handleClick}>
               <HashLink to="#project" smooth>
                 About
               </HashLink>
-            </div>
-            <div onClick={handleClick}>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.2 }} onClick={handleClick}>
               <HashLink to="#about" smooth>
                 Contact
               </HashLink>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
