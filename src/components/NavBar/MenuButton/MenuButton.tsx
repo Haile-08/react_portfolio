@@ -49,8 +49,8 @@ function MenuButton({ open }: props) {
       />
       <motion.div
         transition={{
-          delay: 0.2,
-          duration: 0.4,
+          delay: 0,
+          duration: 0.3,
         }}
         variants={center}
         initial="closed"
