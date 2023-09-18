@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     background-color: #3d3d3d;
-    background-color: rgb(114, 97, 74);
 }
 
 .about-body{
@@ -12,7 +11,6 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
-    background-color: rgb(55, 128, 128);
 }
 .about-title {
     width: 20vw;
@@ -24,7 +22,7 @@
     color: #ffffff;
     font-size: 34px;
     padding-bottom: 150px;
-    background-color: rgb(32, 51, 45);
+    
 }
 
 .about-title p{
@@ -40,13 +38,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: rgb(48, 77, 67);
+    
 }
 
 .about-bar {
-    width: 50vw;
+    width: 60vw;
     height: 60vh;
     margin-left: 50px;
     border-radius: 5%;
-    background-color: rgb(14, 56, 43);
+    padding: 10px;
+}
+
+.about-bar button{
+    outline: none;
+    border: none;
+    padding: 20px 50px;
+    border-radius: 10px;
+    font-family: lato-light;
+    cursor: pointer;
+    background-color: #ff4d4d;
+}
+
+
+.about-description {
+    margin-bottom: 50px;
+}
+.about-description h1{
+    font-family: lato-light;
+}
+
+.about-description p{
+    font-family: lato-light;
+}
+.about-education h1 {
+    font-family: lato-light;
+}
+
+.about-education {
+    margin-bottom: 50px;
+}
+.edu p {
+    font-family: lato-light;
 }

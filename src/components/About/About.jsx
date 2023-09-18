@@ -11,7 +11,7 @@ function About() {
         <div className="about-info">
           <div className="about-bar">
             <div className="about-description">
-              <h1>Description</h1>
+              <h1>DESCRIPTION</h1>
               <hr />
               <p>
                 HI, I am a highly skilled and dedicated Software Developer with
@@ -25,7 +25,7 @@ function About() {
             <div className="about-education">
               <h1>EDUCATION</h1>
               <hr />
-              <div className="edu1">
+              <div className="edu">
                 <p>02.2019- 10.2023</p>
                 <p>
                   Adama Science And Technology University - Computer science and
@@ -33,13 +33,14 @@ function About() {
                 </p>
               </div>
               <hr />
-              <div className="edu2">
+              <div className="edu">
                 <p>05.2022 - 01.2024</p>
                 <p>Holberton School - Software engineering</p>
               </div>
             </div>
-
-            <button>Resume</button>
+            <a href="/1. Haile_Melaku_Resume.pdf" download>
+              <button>RESUME</button>
+            </a>
           </div>
         </div>
       </div>
