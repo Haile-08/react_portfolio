@@ -4,7 +4,6 @@ import { valibotResolver } from "@hookform/resolvers/valibot";
 import { object, string, minLength, email } from "valibot";
 import error from "../../assets/error.png";
 import "./Contact.css";
-import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 interface IFormInputs {

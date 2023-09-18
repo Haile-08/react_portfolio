@@ -3,7 +3,7 @@ import "./About.css";
 
 function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about-body">
         <div className="about-title">
           <p>About Me</p>
@@ -37,6 +37,7 @@ function About() {
                 <p>05.2022 - 01.2024</p>
                 <p>Holberton School - Software engineering</p>
               </div>
+              <hr />
             </div>
             <a href="/1. Haile_Melaku_Resume.pdf" download>
               <button>RESUME</button>

@@ -66,12 +66,12 @@ function Navigation({ setOpen }: navProps) {
             </div>
             <div onClick={handleClick}>
               <HashLink to="#project" smooth>
-                Contact
+                About
               </HashLink>
             </div>
             <div onClick={handleClick}>
-              <HashLink to="" smooth>
-                About
+              <HashLink to="#about" smooth>
+                Contact
               </HashLink>
             </div>
           </div>
