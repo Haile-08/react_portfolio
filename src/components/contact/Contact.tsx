@@ -62,7 +62,7 @@ function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="contact-title">
-        <p>Contact me</p>
+        <p>Contact Me</p>
       </div>
       <div className="contact-body">
         <p>SAY HI</p>
