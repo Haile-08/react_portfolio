@@ -1,0 +1,40 @@
+.footer {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4b4b4b;
+}
+
+.footer-line {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    width: 0.9px;
+    height: 50px;
+    background-color: #ffffff;
+}
+.footer-body {
+    display: flex;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 5vw;
+    background-color: aqua;
+}
+
+.footer-info {
+    padding: 0px 5vw;
+    background-color: aquamarine;
+}
+.footer-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0px 5vw;
+    background-color: blue;
+}

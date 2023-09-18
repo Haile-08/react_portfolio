@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Project from "./components/Project/Project";
 import Contact from "./components/contact/Contact";
 import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [open, setOpen] = useState<boolean>(false);
@@ -33,6 +34,7 @@ function App() {
           <Project />
           <About />
           <Contact />
+          <Footer />
         </div>
       )}
     </>
