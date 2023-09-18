@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Home from "./components/Home/Home";
 import Navigation from "./components/Navigation/Navigation";
@@ -8,34 +8,49 @@ import Project from "./components/Project/Project";
 import Contact from "./components/contact/Contact";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
+import Loading from "./components/Loading/Loading";
 
 function App() {
   const [open, setOpen] = useState<boolean>(false);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 6000);
+  }, []);
   return (
     <>
-      <NavBar open={open} setOpen={setOpen} />
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <NavBar open={open} setOpen={setOpen} />
 
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            className="nav"
-            initial={{ y: "-100vh" }}
-            animate={{ y: 0 }}
-            exit={{ y: "-100vh" }}
-            transition={{ delay: 0.2, duration: 0.5, type: "tween" }}
-          >
-            <Navigation setOpen={setOpen} />
-          </motion.div>
-        )}
-      </AnimatePresence>
-      {!open && (
-        <div className="app">
-          <Home />
-          <Project />
-          <About />
-          <Contact />
-          <Footer />
-        </div>
+          <AnimatePresence>
+            {open && (
+              <motion.div
+                className="nav"
+                initial={{ y: "-100vh" }}
+                animate={{ y: 0 }}
+                exit={{ y: "-100vh" }}
+                transition={{ delay: 0.2, duration: 0.5, type: "tween" }}
+              >
+                <Navigation setOpen={setOpen} />
+              </motion.div>
+            )}
+          </AnimatePresence>
+          {!open && (
+            <div className="app">
+              <Home />
+              <Project />
+              <About />
+              <Contact />
+              <Footer />
+            </div>
+          )}
+        </>
       )}
     </>
   );
