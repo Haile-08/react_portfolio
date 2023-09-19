@@ -1,5 +1,6 @@
 import "./Home.css";
 import { AnimatePresence, motion } from "framer-motion";
+import scroll from "../../assets/scroll.gif";
 
 const textvariants = {
   visible: { opacity: 1, transition: { delay: 0.3, duration: 1.5 } },
@@ -36,7 +37,7 @@ function Home() {
         variants={textvariants}
       >
         <div className="home-scroll-text">
-          <p>SCROLL</p>
+          <img src={scroll} alt="scroll" />
         </div>
         <div className="home-scroll-line">
           <hr className="line" />
@@ -47,3 +48,5 @@ function Home() {
 }
 
 export default Home;
+
+

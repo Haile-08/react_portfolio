@@ -54,8 +54,15 @@
 }
 
 .home-scroll-text p{
-    padding: 0px;
-    margin: 3px 0px;
+    padding: 10px;
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-scroll-text img {
+width: 70px;
 }
 
 .home-scroll-line {
@@ -72,3 +79,4 @@
     height: 14px;
     background-color: #ffffff;
 }
+
