@@ -18,35 +18,35 @@ function Footer() {
           <p>Developed by Haile Melaku</p>
         </div>
         <div className="footer-contact">
-          <div className="icon">
+          <div className="f-icon">
             <a
               href="https://twitter.com/Haile09774574"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="x">
+              <div className="f-x">
                 <img src={x} alt="x" />
               </div>
             </a>
           </div>
-          <div className="icon">
+          <div className="f-icon">
             <a
               href="https://github.com/Haile-08"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="github">
+              <div className="f-github">
                 <img src={github} alt="github" />
               </div>
             </a>
           </div>
-          <div className="icon">
+          <div className="f-icon">
             <a
               href="https://www.linkedin.com/in/haile-melaku/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="linkedin">
+              <div className="f-linkedin">
                 <img src={linkedin} alt="linkedin" />
               </div>
             </a>

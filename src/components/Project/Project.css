@@ -45,18 +45,7 @@
     padding: 0 ;
     transform: rotate(-90deg) translate(-50%);
 }
-@media only screen and (max-width: 600px) {
-    .project-title {
-        width: 20vw;
-        height: 60vh;
-        font-family: lato-thin;
-        color: #ffffff;
-    }
-    .project-title p{
-        font-size: 15px;
-        transform: rotate(-90deg) translate(-50%);
-    }
-}
+
 
 .project-demo {
     width: 80vw;
@@ -74,4 +63,18 @@
     border-radius: 5px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+@media only screen and (max-width: 500px) {
+    .project-title {
+        display: none;
+    }
+    .project-demo {
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

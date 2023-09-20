@@ -2,6 +2,20 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./About.css";
 
+const description = {
+  visible: { opacity: 1, transition: { delay: 0.5, duration: 0.5 } },
+  hidden: { opacity: 0, transition: { delay: 0.5, duration: 0.5 } },
+};
+
+const education = {
+  visible: { opacity: 1, transition: { delay: 0.7, duration: 0.5 } },
+  hidden: { opacity: 0, transition: { delay: 0.7, duration: 0.5 } },
+};
+const resume = {
+  visible: { opacity: 1, transition: { delay: 0.9, duration: 0.5 } },
+  hidden: { opacity: 0, transition: { delay: 0.9, duration: 0.5 } },
+};
+
 function About() {
   return (
     <div className="about" id="about">
@@ -11,7 +25,12 @@ function About() {
         </div>
         <div className="about-info">
           <div className="about-bar">
-            <div className="about-description">
+            <motion.div
+              className="about-description"
+              initial="hidden"
+              whileInView="visible"
+              variants={description}
+            >
               <h1>DESCRIPTION</h1>
               <hr />
               <p>
@@ -22,8 +41,13 @@ function About() {
                 professional experience in the field, consistently delivering
                 polished, linted, formatted, and thoroughly tested projects.
               </p>
-            </div>
-            <div className="about-education">
+            </motion.div>
+            <motion.div
+              className="about-education"
+              initial="hidden"
+              whileInView="visible"
+              variants={education}
+            >
               <h1>EDUCATION</h1>
               <hr />
               <div className="edu">
@@ -39,12 +63,15 @@ function About() {
                 <p>Holberton School - Software engineering</p>
               </div>
               <hr />
-            </div>
+            </motion.div>
             <a href="/1. Haile_Melaku_Resume.pdf" download>
               <motion.button
+                initial="hidden"
+                whileInView="visible"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                variants={resume}
               >
                 RESUME
               </motion.button>

@@ -39,9 +39,6 @@ function Home() {
         <div className="home-scroll-text">
           <img src={scroll} alt="scroll" />
         </div>
-        <div className="home-scroll-line">
-          <hr className="line" />
-        </div>
       </motion.div>
     </div>
   );

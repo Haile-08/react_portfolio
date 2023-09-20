@@ -178,3 +178,74 @@
     height: auto;
     margin: 0.5vh;
 }
+
+@media only screen and (max-width: 500px) { 
+    .contact-title {
+        display: none;
+    }
+    .contact-body{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+    }
+    .contact-body form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 2vw;
+        width: 80vw;
+        height: auto; 
+        font-family: lato-light;
+    }
+    .input-box {
+        width: 40vw;
+        height: auto;
+        margin: 0.5vh;
+    }
+    .contact-input-body-show {
+        outline: none;
+        border: solid 1px #ff3838;
+        width: 66vw;
+        height: 20vh;
+        margin: 1vh;
+        padding-top: 30px;
+        padding-left: 30px;
+        display: flex;
+        font-size: 20px;
+        font-family: lato-light;
+        border-radius: 5px;
+        background-color: #4b4b4b94;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    }
+    .contact-input-body-hidden {
+        outline: none;
+        border: none;
+        width: 66vw;
+        height: 20vh;
+        margin: 1vh;
+        padding-top: 30px;
+        padding-left: 30px;
+        display: flex;
+        font-size: 20px;
+        font-family: lato-light;
+        border-radius: 5px;
+        background-color: #4b4b4b94;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    }
+    
+    .contact-body button{
+        outline: none;
+        border: none;
+        width: 73vw;
+        height: 6vh;
+        margin: 1vh;
+        cursor: pointer;
+        font-family: lato-light;
+        font-size: 20px;
+        border-radius: 5px; 
+        background-color: #4b4b4b94;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    }
+}

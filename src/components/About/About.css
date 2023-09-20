@@ -56,7 +56,7 @@
     border-radius: 10px;
     font-family: lato-light;
     cursor: pointer;
-    background-color: #ff4d4d;
+    background-color: #ff3838;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
@@ -80,4 +80,43 @@
 }
 .edu p {
     font-family: lato-light;
+}
+
+@media only screen and (max-width: 500px) {
+    .about-title {
+        display: none;
+    }
+    .about-info {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
+    .about-bar {
+        width: 80vw;
+        height: 60vh;
+        margin-top: 10vh;
+        border-radius: 5%;
+        padding: 10px;
+    }
+
+    .about-description h1{
+        font-size: 25px;
+        font-family: lato-light;
+    }
+    .about-description p{
+        font-size: 13px;
+        font-family: lato-light;
+    }
+    .about-education h1 {
+        font-size: 25px;
+        font-family: lato-light;
+    }
+    .edu p {
+        font-size: 13px;
+        font-family: lato-light;
+    }
 }

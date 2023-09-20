@@ -31,8 +31,7 @@ const demo2variants = {
 function Project() {
   const [openDemo1, setOpenDemo1] = useState<boolean>(false);
   const [openDemo2, setOpenDemo2] = useState<boolean>(false);
-  console.log(`demo 1 ${openDemo1}`);
-  console.log(`demo 2 ${openDemo2}`);
+
   const handleDemo1Click = () => {
     if (setOpenDemo1) {
       setOpenDemo1((prevState) => !prevState);

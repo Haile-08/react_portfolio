@@ -63,20 +63,6 @@
 
 .home-scroll-text img {
 width: 70px;
-}
-
-.home-scroll-line {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.line {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    width: 0.9px;
-    height: 14px;
-    background-color: #ffffff;
+margin: 6px 0px;
 }
 

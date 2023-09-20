@@ -25,9 +25,12 @@ const schema = object({
   ]),
 });
 
-function Contact() {
-  
+const contactVariant = {
+  visible: { opacity: 1, transition: { delay: 0.7, duration: 0.5 } },
+  hidden: { opacity: 0, transition: { delay: 0.7, duration: 0.5 } },
+};
 
+function Contact() {
   const {
     register,
     handleSubmit,
@@ -63,7 +66,12 @@ function Contact() {
       <div className="contact-title">
         <p>Contact Me</p>
       </div>
-      <div className="contact-body">
+      <motion.div
+        className="contact-body"
+        initial="hidden"
+        whileInView="visible"
+        variants={contactVariant}
+      >
         <p>SAY HI</p>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="contact-top">
@@ -124,7 +132,7 @@ function Contact() {
             Send
           </motion.button>
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 }
